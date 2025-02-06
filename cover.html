@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikas's Portfolio</title>
+    <style>
+        /* Video Background Styles */
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            /* Prevents scrolling */
+            transition: transform 0.1s ease;
+            /* Set transition duration to 0.1s */
+        }
+
+        .video-background {
+            position: absolute;
+            /* Position the video in the background */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            /* Hides any overflow */
+            z-index: -1;
+            /* Places the video behind other content */
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+            /* Add this property */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .cover-container {
+            text-align: center;
+        }
+
+        .cover-button {
+
+            background-color: #59b2f4;
+            color: #190a0a;
+            font-style: italic;
+            font-size: x-large;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 680px;
+            width: 170px;
+        }
+
+        .cover-button:hover {
+            background-color: #110e0e;
+            color: rgb(255, 255, 255)
+        }
+
+        /* Slide out animation */
+        .slide-out {
+            animation: slideOut 1s forwards;
+            transform: translateX(-100%);
+            /* Move the body to the left */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="181537-866999852_large.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="cover-container">
+        <button class="cover-button" onclick="slideToLogin()">Let's Go ...</button>
+    </div>
+
+    <script>
+        function slideToLogin() {
+            document.body.classList.add('slide-out'); // Add slide-out class
+            setTimeout(() => {
+                window.location.href = 'index.html'; // Redirect after animation
+            }, 100); // Match the timeout with the CSS transition duration
+        }
+    </script>
+</body>
+
+</html>
