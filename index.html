@@ -18,21 +18,63 @@
 </head>
 
 <body>
-  <!-- HEADER DESIGN -->
-  <header class="header">
-    <a href="#" class="logo">Portfolio: VikasPrajapat</a>
+ <!-- HEADER DESIGN -->
+<header class="header glass">
+  <a href="#" class="logo">Portfolio: VikasPrajapat</a>
+  <i class="fas fa-bars" id="menu-icon"></i>
 
-    <i class="fas fa-bars" id="menu-icon"></i>
+  <nav class="navbar">
+    <ul>
+      <li>
+        <a href="#home" class="nav-link" title="Home">
+          <!-- 3D-style Home Icon -->
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor">
+            <path d="M256 32L20 260h52v220h128V332h112v148h128V260h52z" />
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="#about" class="nav-link" title="About">
+          <!-- 3D-style User Icon -->
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2s2.1 4.8 4.8 4.8Zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8Z" />
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="#skills" class="nav-link" title="Skills">
+          <!-- 3D-style Terminal/Coding Icon -->
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm2 3v2l2 2-2 2v2l4-4-4-4Zm6 6h4v-2h-4v2Z" />
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="#portfolio" class="nav-link" title="Portfolio">
+          <!-- 3D-style Folder Icon -->
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M10 4H4a2 2 0 0 0-2 2v2h20V6a2 2 0 0 0-2-2h-8l-2-2Zm12 6H2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V10Z" />
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="#contact" class="nav-link" title="Contact">
+          <!-- 3D-style Email Icon -->
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M20 4H4a2 2 0 0 0-2 2v1.2l10 6.6 10-6.6V6a2 2 0 0 0-2-2Zm0 4.4-8 5.3-8-5.3V18a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8.4Z" />
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
 
-    <!-- Navbar section -->
-    <nav style="display: flex; size: 50rem; align-items: center;" class="Navbar">
-      <li><a href="#home" class="active"><i class="fa fa-home"></i></a></li>
-      <li><a href="#about" class="active"><i class="fa fa-user"></i></a></li>
-      <li><a href="#skills" class="active"><i class="fa fa-cog"></i></a></li>
-      <li><a href="#portfolio" class="active"><i class="fa fa-briefcase"></i></a></li>
-      <li><a href="#contact" class="active"><i class="fa fa-envelope"></i></a></li>
-    </nav>
-  </header>
+
+
 
   <!-- HOME SECTION DESIGN -->
   <section class="home" id="home">
@@ -77,7 +119,7 @@
               <li>Proficient in HTML, CSS, and JavaScript</li>
               <li>Experience with frameworks like React and Redux</li>
               <li>Strong understanding of responsive design and accessibility standards</li>
-              <li>Programming Language I knows are : </br>
+              <li>Programming Language : </br>
                 Python </br> C++ </li>
               <li>Familiarity with version control systems like:</br>(VS Code, Google Collab, GitHub)</li>
             </ul>
@@ -192,15 +234,35 @@
         <h2 class="heading">Latest <span>Projects</span></h2>
 
         <div class="portfolio-container">
+        <div class="portfolio-box">
+            <div class="portfolio-layer">
+              <h4 class="portfolio-title">ShopFinit</h4>
+              <p class="portfolio-description">ShopFinit is a full-featured eCommerce web application built using React.js for dynamic and responsive online shopping experiences.
+                                              ShopFinit allows users to browse products, add items to cart, and checkout securely. The application is designed to be scalable, maintainable, and easy to use.
+              </p>
+              <a href="https://github.com/Vikas-51/ShopFinit-Ecommerce-App.git" class="portfolio-link" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+
+           <div class="portfolio-box">
+            <div class="portfolio-layer">
+              <h4 class="portfolio-title">KanBan Flow</h4>
+              <p class="portfolio-description">KanBan-Flow is a task management web application built using React.js that visualizes workflows with draggable Kanban boards for efficient project tracking.
+              </p>
+              <a href="https://github.com/Vikas-51/KanBan-Flow.git" class="portfolio-link" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+
+
           <div class="portfolio-box">
             <div class="portfolio-layer">
               <h4 class="portfolio-title">Quiz-Application---Quizlet</h4>
               <p class="portfolio-description">The Quizlet- coding quiz application is a web-based platform designed to
-                test users' knowledge and skills in various programming languages and technologies. The application is
-                built using HTML, CSS, and JavaScript, and utilizes the Font Awesome library for icons and React JS for
-                dynamic content rendering. Quizlet coding quiz application provides a solid foundation for a
-                comprehensive quiz platform, and with further development, it can become a valuable resource for users
-                to test and improve their coding skills.
+                test users' knowledge and skills in various programming languages and technologies. 
               </p>
               <a href="https://github.com/Vikas-51/Quiz-Application---Quizlet.git" class="portfolio-link"
                 target="_blank">
@@ -215,8 +277,6 @@
               <p class="portfolio-description">EXPENSE ECHO is a simple and easy-to-use expense tracker app that helps
                 you manage your daily expenses. With EXPENSE ECHO, you can track your income and expenses, categorize
                 your spending, and set budgets for different categories.
-                Our app is designed to be user-friendly and intuitive, making it easy for anyone to start tracking their
-                expenses and taking control of their finances.
               </p>
               <a href="https://github.com/Vikas-51/Expense_Tracker-App.git" class="portfolio-link" target="_blank">
                 <i class="fab fa-github"></i>
@@ -225,12 +285,33 @@
           </div>
 
           <div class="portfolio-box">
-
             <div class="portfolio-layer">
-              <h4 class="portfolio-title">MEDICOS</h4>
-              <p class="portfolio-description">UI Design of a Medical Application.
+              <h4 class="portfolio-title">React-Admin-DashBoard-Sparkle</h4>
+              <p class="portfolio-description">Developed a fully functional Admin Dashboard web application using React.js and Chart.js, featuring real-time analytics and management tools with Tailwind CSS and Context API.
               </p>
-              <a href="https://github.com/Vikas-51/MEDICOS.git" class="portfolio-link" target="_blank">
+              <a href="https://github.com/Vikas-51/react-admin-dashboard-assign3.git" class="portfolio-link" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="portfolio-box">
+            <div class="portfolio-layer">
+              <h4 class="portfolio-title">To-Do App</h4>
+              <p class="portfolio-description">A to-do app is a digital tool designed to help users organize, manage, and track tasks efficiently, enhancing productivity and ensuring important activities are not forgotten.
+              </p>
+              <a href="https://github.com/Vikas-51/Todo-App.git" class="portfolio-link" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="portfolio-box">
+            <div class="portfolio-layer">
+              <h4 class="portfolio-title">MANY OTHER PROJECTS</h4>
+              <p class="portfolio-description">Available on GitHub
+              </p>
+              <a href="https://github.com/Vikas-51" class="portfolio-link" target="_blank">
                 <i class="fab fa-github"></i>
               </a>
             </div>
@@ -238,40 +319,42 @@
         </div>
       </section>
 
-      <!-- CONTACT SECTION DESIGN -->
+     <!-- CONTACT SECTION DESIGN -->
+<section class="contact" id="contact">
+  <h2 class="heading">Contact <span>Me</span></h2>
 
-      <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me</span></h2>
+  <form id="contact-form">
+    <div class="input-box">
+      <input type="text" id="full-name" placeholder="Full Name" required>
+      <input type="email" id="email-address" placeholder="Email Address" required>
+    </div>
+    <div class="input-box">
+      <input type="number" id="mobile-number" placeholder="Mobile Number" required>
+      <input type="text" id="email-subject" placeholder="Email Subject" required>
+    </div>
 
-        <form id="contact-form">
-          <div class="input-box">
-            <input type="text" id="full-name" placeholder="Full Name">
-            <input type="email" id="email-address" placeholder="Email Address">
-          </div>
-          <div class="input-box">
-            <input type="number" id="mobile-number" placeholder="Mobile Number">
-            <input type="text" id="email-subject" placeholder="Email Subject">
-          </div>
+    <textarea id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+</section>
 
-          <textarea id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
-          <input type="submit" value="Send Message" class="btn">
-        </form>
-      </section>
 
-      <!--  FOOTER DESIGN -->
+     <!-- FOOTER DESIGN -->
+<footer class="footer glass-footer">
+  <div class="footer-text">
+    <p>Made By @VikasPrajapat</p>
+     <div class="footer-copyright">
+    <p>&copy; 2023 Vikas Prajapat. All rights reserved.</p>
+  </div>
+  </div>
 
-      <footer class="footer">
-        <div class="footer-text">
-          <p>Made By @VikasPrajapat</p>
-        </div>
+  <div class="footer-iconTop">
+    <a href="#home" title="Back to Top">
+      <i class="fa-solid fa-angle-up"></i>
+    </a>
+  </div>
+</footer>
 
-        <div class="footer-iconTop">
-          <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
-        </div>
-        <div class="footer-copyright">
-          <p>&copy; 2023 Vikas Prajapat. All rights reserved.</p>
-        </div>
-      </footer>
 
       <!--  MAIN JS -->
 
